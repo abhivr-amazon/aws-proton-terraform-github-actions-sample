@@ -107,6 +107,17 @@ jobs:
           service_name=${split_resources[1]}
 
           working_directory=pipeline/$service_name
+        elif [[ "$modified_resource_arn" == *":component/"* ]]; then
+          environment_arn=$(jq -r '.componentMetadata.environmentArn' ${{ steps.find-modified.outputs.deployment-metadata-path }})
+          environment_name=${environment_arn##*/}
+
+          resource_portion=${modified_resource_arn##*:}
+          IFS='/'
+          read -a split_resources <<< "$resource_portion"
+
+          component_name=${split_resources[1]}
+
+          working_directory=$environment_name/$component_name/
         fi
 
         if [[ $(jq -r --arg env $environment_name 'has($env)' env_config.json) = "false" ]]; then
