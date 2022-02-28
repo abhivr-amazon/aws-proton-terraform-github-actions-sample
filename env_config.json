@@ -9,9 +9,9 @@
         "region": "us-west-2",
         "state_bucket":"wishnick-terraform-states"
     },
-    "test_tf_env_3": {
+    "test_tf_env_4": {
         "role": "arn:aws:iam::101381735630:role/ExampleGithubRole",
         "region": "us-east-1",
-        "state_bucket":"aws-proton-terraform-role-stack"
+        "state_bucket":"aws-proton-terraform-bucket-101381735630"
     }
 }
