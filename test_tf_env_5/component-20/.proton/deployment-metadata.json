@@ -1,0 +1,9 @@
+{
+  "deploymentId" : "833410a3-1f57-433a-8ccb-ba3d54757fd6",
+  "isResourceDeleted" : true,
+  "componentMetadata" : {
+    "arn" : "arn:aws:proton:us-east-1:101381735630:component/component-20",
+    "environmentArn" : "arn:aws:proton:us-east-1:101381735630:environment/test_tf_env_5",
+    "componentType" : "CUSTOM_ISOLATED"
+  }
+}
