@@ -1,0 +1,17 @@
+/*
+This file is no longer managed by AWS Proton. The associated resource has been deleted in Proton.
+*/
+
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: This environment holds a simple DDB table shared between services.
+Resources:
+  BasicEnvParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: test-ssm-env-param
+      Type: String
+      Value: "{{environment.outputs.vpc_arn}}"
+Outputs:
+  ParameterValue:
+    Value: !GetAtt BasicEnvParameter.Value
