@@ -1,0 +1,11 @@
+{
+  "deploymentId" : "f97e503b-f9b5-4d0b-9583-f01ea1822d16",
+  "isResourceDeleted" : false,
+  "resourceMetadata" : {
+    "arn" : "arn:aws:proton:us-east-1:101381735630:service/lambda-function-3/service-instance/lambda-svc",
+    "templateArn" : "arn:aws:proton:us-east-1:101381735630:service-template/sample-tf-service-template-2",
+    "templateMajorVersion" : "1",
+    "templateMinorVersion" : "0",
+    "environmentArn" : "arn:aws:proton:us-east-1:101381735630:environment/test_tf_env_5"
+  }
+}
